@@ -1,12 +1,26 @@
-//Given an integer array A of size N, find sum of elements in it.
+/*package whatever //do not write package name here */
 
-function sumOfArrayElements(array) {
-    let sum = 0;
-    for (let i = 0; i < array.length; i++) {
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class GFG {
+	public static void main (String[] args) {
+		//code
+	Scanner sc = new Scanner(System.in);
+	int t = sc.nextInt();
+	while(t>0){
+	int n = sc.nextInt();
+	int array[] = new int[n];
+	for(int i = 0; i < n; i++) {
+        array[i] = sc.nextInt(); 
+    }
+    int sum = 0;
+    for(int i = 0; i < array.length; i++) {
         sum += array[i];
     }
-    return sum;
+    System.out.println(sum);
+    t--;
+	}
+ }
 }
-
-console.log(sumOfArrayElements([3, 2, 1]));
-console.log(sumOfArrayElements([1, 2, 3, 4]));
